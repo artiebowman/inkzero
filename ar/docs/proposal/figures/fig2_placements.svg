@@ -110,13 +110,13 @@
         <line x1="4" y1="37" x2="76" y2="37" stroke="#bbb"/>
       </g>
       <g font-size="9" transform="translate(0,34)">
-        <g transform="translate(6,10)"><rect width="10" height="14" fill="#ccc"/><circle cx="18" cy="7" r="2.5" fill="#111"/><circle cx="25" cy="7" r="2.5" fill="#111"/><circle cx="32" cy="7" r="2.5" fill="none" stroke="#999"/><circle cx="39" cy="7" r="2.5" fill="none" stroke="#999"/><text x="74" y="10" text-anchor="end">4.5%</text></g>
-        <g transform="translate(6,30)"><rect width="10" height="14" fill="#ccc"/><circle cx="18" cy="7" r="2.5" fill="#111"/><circle cx="25" cy="7" r="2.5" fill="none" stroke="#999"/><circle cx="32" cy="7" r="2.5" fill="none" stroke="#999"/><circle cx="39" cy="7" r="2.5" fill="none" stroke="#999"/><text x="74" y="10" text-anchor="end">6.8%</text></g>
-        <g transform="translate(6,50)"><rect width="10" height="14" fill="#ccc"/><circle cx="18" cy="7" r="2.5" fill="none" stroke="#999"/><circle cx="25" cy="7" r="2.5" fill="none" stroke="#999"/><circle cx="32" cy="7" r="2.5" fill="none" stroke="#999"/><circle cx="39" cy="7" r="2.5" fill="none" stroke="#999"/><text x="74" y="10" text-anchor="end">9.1%</text></g>
-        <g transform="translate(6,70)"><rect width="10" height="14" fill="#ccc"/><circle cx="18" cy="7" r="2.5" fill="#111"/><circle cx="25" cy="7" r="2.5" fill="#111"/><circle cx="32" cy="7" r="2.5" fill="#111"/><circle cx="39" cy="7" r="2.5" fill="none" stroke="#999"/><text x="74" y="10" text-anchor="end">2.3%</text></g>
-        <text x="35" y="100" text-anchor="middle" fill="#777">…</text>
-        <text x="35" y="222" text-anchor="middle" fill="#555">one row</text>
-        <text x="35" y="234" text-anchor="middle" fill="#555">per card,</text>
+        <g transform="translate(6,10)"><rect width="10" height="14" fill="#ccc"/><circle cx="18" cy="7" r="2.5" fill="#111"/><circle cx="25" cy="7" r="2.5" fill="#111"/><circle cx="32" cy="7" r="2.5" fill="none" stroke="#999"/><circle cx="39" cy="7" r="2.5" fill="none" stroke="#999"/><text x="68" y="10" text-anchor="end">4.5%</text></g>
+        <g transform="translate(6,30)"><rect width="10" height="14" fill="#ccc"/><circle cx="18" cy="7" r="2.5" fill="#111"/><circle cx="25" cy="7" r="2.5" fill="none" stroke="#999"/><circle cx="32" cy="7" r="2.5" fill="none" stroke="#999"/><circle cx="39" cy="7" r="2.5" fill="none" stroke="#999"/><text x="68" y="10" text-anchor="end">6.8%</text></g>
+        <g transform="translate(6,50)"><rect width="10" height="14" fill="#ccc"/><circle cx="18" cy="7" r="2.5" fill="none" stroke="#999"/><circle cx="25" cy="7" r="2.5" fill="none" stroke="#999"/><circle cx="32" cy="7" r="2.5" fill="none" stroke="#999"/><circle cx="39" cy="7" r="2.5" fill="none" stroke="#999"/><text x="68" y="10" text-anchor="end">9.1%</text></g>
+        <g transform="translate(6,70)"><rect width="10" height="14" fill="#ccc"/><circle cx="18" cy="7" r="2.5" fill="#111"/><circle cx="25" cy="7" r="2.5" fill="#111"/><circle cx="32" cy="7" r="2.5" fill="#111"/><circle cx="39" cy="7" r="2.5" fill="none" stroke="#999"/><text x="68" y="10" text-anchor="end">2.3%</text></g>
+        <text x="40" y="100" text-anchor="middle" fill="#777">…</text>
+        <text x="40" y="222" text-anchor="middle" fill="#555">one row</text>
+        <text x="40" y="234" text-anchor="middle" fill="#555">per card,</text>
         <text x="40" y="246" text-anchor="middle" fill="#555">by cost,</text>
         <text x="40" y="258" text-anchor="middle" fill="#555">then type</text>
       </g>
