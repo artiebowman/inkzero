@@ -1,11 +1,11 @@
 """Build the proposal HTML from the Markdown master.
 
-Run from the repo root or from ar/:
-    python3 ar/build/build_html.py && python3 ar/build/build_pdf.py
+Run from anywhere:
+    python3 ar/docs/proposal/build/build_html.py && python3 ar/docs/proposal/build/build_pdf.py
 
 Needs: pip install markdown
-Reads  ar/InkZero_AR_Proposal_v3_2026-10-18.md and ar/figures/*.svg
-Writes ar/build/InkZero_AR_Proposal.html (ignored by git)
+Reads  ar/docs/proposal/InkZero_AR_Proposal_v3_2026-10-18.md and ar/docs/proposal/figures/*.svg
+Writes ar/docs/proposal/build/InkZero_AR_Proposal.html (ignored by git)
 """
 import base64
 import re
@@ -13,10 +13,10 @@ from pathlib import Path
 
 import markdown
 
-HERE = Path(__file__).resolve().parent          # ar/build
-AR = HERE.parent                                 # ar
-MD = AR / "InkZero_AR_Proposal_v3_2026-10-18.md"
-FIGURES = AR / "figures"
+HERE = Path(__file__).resolve().parent          # ar/docs/proposal/build
+PROPOSAL = HERE.parent                           # ar/docs/proposal
+MD = PROPOSAL / "InkZero_AR_Proposal_v3_2026-10-18.md"
+FIGURES = PROPOSAL / "figures"
 CSS = HERE / "proposal.css"
 OUT = HERE / "InkZero_AR_Proposal.html"
 

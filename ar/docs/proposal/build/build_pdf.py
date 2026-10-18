@@ -1,20 +1,20 @@
 """Render the proposal PDF from the HTML that build_html.py wrote.
 
-Run after build_html.py:
-    python3 ar/build/build_pdf.py
+Run after build_html.py, on the Mac (it has Helvetica; Linux falls back to Liberation Sans):
+    python3 ar/docs/proposal/build/build_pdf.py
 
 Needs: pip install playwright && python3 -m playwright install chromium
-Reads  ar/build/InkZero_AR_Proposal.html
-Writes ar/InkZero_AR_Proposal_v3_2026-10-18.pdf (the committed copy)
+Reads  ar/docs/proposal/build/InkZero_AR_Proposal.html
+Writes ar/docs/proposal/InkZero_AR_Proposal_v3_2026-10-18.pdf (the committed copy)
 """
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-HERE = Path(__file__).resolve().parent
-AR = HERE.parent
+HERE = Path(__file__).resolve().parent          # ar/docs/proposal/build
+PROPOSAL = HERE.parent                           # ar/docs/proposal
 HTML = HERE / "InkZero_AR_Proposal.html"
-PDF = AR / "InkZero_AR_Proposal_v3_2026-10-18.pdf"
+PDF = PROPOSAL / "InkZero_AR_Proposal_v3_2026-10-18.pdf"
 
 FOOTER = (
     '<div style="width:100%;text-align:center;font-family:Helvetica,Arial,sans-serif;'
