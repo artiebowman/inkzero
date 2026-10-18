@@ -21,6 +21,7 @@ __pycache__/
 **/[Oo]bj/
 **/[Bb]uild/
 **/[Bb]uilds/
+!ar/build/
 **/[Ll]ogs/
 **/[Uu]serSettings/
 **/MemoryCaptures/
@@ -43,5 +44,5 @@ __pycache__/
 *.app
 crashlytics-build.properties
 
-# build output
+# proposal build output
 ar/build/*.html
