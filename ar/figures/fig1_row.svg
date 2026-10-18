@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="226" viewBox="0 0 860 226" font-family="Helvetica, Arial, sans-serif" fill="#111">
+  <rect width="860" height="226" fill="#fff"/>
+
+  <!-- thumbnail placeholder -->
+  <g transform="translate(20,24)">
+    <rect width="64" height="90" rx="5" fill="#e6e6e6" stroke="#111" stroke-width="2"/>
+    <text x="32" y="50" font-size="11" text-anchor="middle" fill="#555">card</text>
+    <text x="32" y="64" font-size="11" text-anchor="middle" fill="#555">art</text>
+    <text x="32" y="108" font-size="12" text-anchor="middle">Maleficent</text>
+  </g>
+
+  <!-- pip 1: ink drop -->
+  <g transform="translate(110,36)">
+    <rect width="64" height="64" rx="8" fill="#f2f2f2" stroke="#111" stroke-width="2"/>
+    <path d="M32 8 C32 8 16 30 16 38 a16 16 0 0 0 32 0 C48 30 32 8 32 8 Z" fill="#111"/>
+    <text x="32" y="86" font-size="13" text-anchor="middle">ink</text>
+  </g>
+
+  <!-- pip 2: card with X -->
+  <g transform="translate(194,36)">
+    <rect width="64" height="64" rx="8" fill="#f2f2f2" stroke="#111" stroke-width="2"/>
+    <rect x="18" y="12" width="28" height="40" rx="3" fill="none" stroke="#111" stroke-width="2.5"/>
+    <line x1="22" y1="18" x2="42" y2="46" stroke="#111" stroke-width="3"/>
+    <line x1="42" y1="18" x2="22" y2="46" stroke="#111" stroke-width="3"/>
+    <text x="32" y="86" font-size="13" text-anchor="middle">discard</text>
+  </g>
+
+  <!-- pip 3: blank -->
+  <g transform="translate(278,36)">
+    <rect width="64" height="64" rx="8" fill="#f2f2f2" stroke="#111" stroke-width="2"/>
+    <rect x="18" y="12" width="28" height="40" rx="3" fill="none" stroke="#999" stroke-width="2" stroke-dasharray="4 3"/>
+    <text x="32" y="86" font-size="13" text-anchor="middle">blank</text>
+  </g>
+
+  <!-- pip 4: blank -->
+  <g transform="translate(362,36)">
+    <rect width="64" height="64" rx="8" fill="#f2f2f2" stroke="#111" stroke-width="2"/>
+    <rect x="18" y="12" width="28" height="40" rx="3" fill="none" stroke="#999" stroke-width="2" stroke-dasharray="4 3"/>
+    <text x="32" y="86" font-size="13" text-anchor="middle">blank</text>
+  </g>
+
+  <!-- number -->
+  <g transform="translate(470,36)">
+    <rect width="160" height="64" rx="8" fill="#f2f2f2" stroke="#111" stroke-width="2"/>
+    <text x="80" y="44" font-size="32" font-weight="bold" text-anchor="middle">4.5%</text>
+    <text x="80" y="82" font-size="12" text-anchor="middle">chance it's the</text>
+    <text x="80" y="96" font-size="12" text-anchor="middle">next card drawn</text>
+  </g>
+
+  <text x="20" y="166" font-size="13" fill="#555"># Sample panel row. In this scene 44 of the opponent's cards are unseen (38 in the deck, 6 in hand),</text>
+  <text x="32" y="184" font-size="13" fill="#555">and 2 of this card's 4 copies are among them. 2 ÷ 44 = 4.5%, the chance it is the next card drawn.</text>
+  <text x="32" y="202" font-size="13" fill="#555">On the mat the card is right there, so the thumbnail is left off.</text>
+</svg>
