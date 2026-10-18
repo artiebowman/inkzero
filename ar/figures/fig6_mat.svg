@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560" font-family="Helvetica, Arial, sans-serif" fill="#111">
+  <!-- scale: 1 mm = 1 px for the mat (610 x 356) -->
+  <rect width="800" height="560" fill="#fff"/>
+  <text x="70" y="30" font-size="15" font-weight="bold">The printed mat as its owner sees it, to scale.</text>
+  <text x="70" y="46" font-size="11" fill="#555">610 × 356 mm (24 × 14 in). Cards 66 × 91 mm sleeved.</text>
+
+  <g transform="translate(70,96)">
+    <rect width="610" height="356" fill="#f6f6f6" stroke="#111" stroke-width="2.5"/>
+
+    <!-- corner pins -->
+    <g fill="none" stroke="#111" stroke-width="2">
+      <circle cx="0" cy="0" r="8"/><line x1="-8" y1="0" x2="8" y2="0"/><line x1="0" y1="-8" x2="0" y2="8"/>
+      <circle cx="610" cy="0" r="8"/><line x1="602" y1="0" x2="618" y2="0"/><line x1="610" y1="-8" x2="610" y2="8"/>
+      <circle cx="0" cy="356" r="8"/><line x1="-8" y1="356" x2="8" y2="356"/><line x1="0" y1="348" x2="0" y2="364"/>
+      <circle cx="610" cy="356" r="8"/><line x1="602" y1="356" x2="618" y2="356"/><line x1="610" y1="348" x2="610" y2="364"/>
+    </g>
+    <text x="-4" y="-12" font-size="10" fill="#555">pin 1</text>
+    <text x="592" y="-12" font-size="10" fill="#555">pin 2</text>
+    <text x="-4" y="378" font-size="10" fill="#555">pin 4</text>
+    <text x="592" y="378" font-size="10" fill="#555">pin 3</text>
+
+    <!-- deck top-right, discard under it -->
+    <rect x="464" y="12" width="134" height="232" fill="none" stroke="#777" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <rect x="498" y="24" width="66" height="91" rx="2" fill="#fff" stroke="#999" stroke-width="1.2"/>
+    <text x="531" y="74" font-size="10" fill="#777" text-anchor="middle">deck</text>
+    <rect x="498" y="135" width="66" height="91" rx="2" fill="#fff" stroke="#999" stroke-width="1.2"/>
+    <text x="531" y="185" font-size="10" fill="#777" text-anchor="middle">discard</text>
+
+    <!-- play zone: two rows of four, slots 91 wide for sideways cards -->
+    <rect x="12" y="12" width="440" height="232" fill="none" stroke="#777" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <g fill="none" stroke="#bbb" stroke-width="1" stroke-dasharray="3 3">
+      <rect x="20" y="22" width="91" height="91"/><rect x="123" y="22" width="91" height="91"/><rect x="226" y="22" width="91" height="91"/><rect x="329" y="22" width="91" height="91"/>
+      <rect x="20" y="124" width="91" height="91"/><rect x="123" y="124" width="91" height="91"/><rect x="226" y="124" width="91" height="91"/><rect x="329" y="124" width="91" height="91"/>
+    </g>
+    <g fill="#fff" stroke="#999" stroke-width="1.2">
+      <rect x="32" y="22" width="66" height="91" rx="2"/><rect x="135" y="22" width="66" height="91" rx="2"/><rect x="238" y="22" width="66" height="91" rx="2"/><rect x="341" y="22" width="66" height="91" rx="2"/>
+      <rect x="32" y="124" width="66" height="91" rx="2"/><rect x="135" y="124" width="66" height="91" rx="2"/><rect x="238" y="124" width="66" height="91" rx="2"/>
+      <rect x="329" y="136" width="91" height="66" rx="2"/>
+    </g>
+    <g font-size="9" fill="#777" text-anchor="middle">
+      <text x="65" y="72">play-1</text><text x="168" y="72">play-2</text><text x="271" y="72">play-3</text><text x="374" y="72">play-4</text>
+      <text x="65" y="174">play-5</text><text x="168" y="174">play-6</text><text x="271" y="174">play-7</text><text x="374" y="174">play-8, exerted</text>
+    </g>
+    <text x="232" y="236" font-size="11" fill="#555" text-anchor="middle">play zone</text>
+
+    <!-- ink zone: full width, cards upright at true size, fanned -->
+    <rect x="12" y="252" width="586" height="98" fill="none" stroke="#777" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <g fill="#fff" stroke="#999" stroke-width="1.2">
+      <rect x="20" y="256" width="66" height="91" rx="2"/><rect x="55" y="256" width="66" height="91" rx="2"/><rect x="90" y="256" width="66" height="91" rx="2"/>
+      <rect x="125" y="256" width="66" height="91" rx="2"/><rect x="160" y="256" width="66" height="91" rx="2"/><rect x="195" y="256" width="66" height="91" rx="2"/>
+      <rect x="230" y="256" width="66" height="91" rx="2"/><rect x="265" y="256" width="66" height="91" rx="2"/><rect x="300" y="256" width="66" height="91" rx="2"/><rect x="335" y="256" width="66" height="91" rx="2"/>
+    </g>
+    <text x="500" y="300" font-size="9" fill="#777" text-anchor="middle">inkwell-1 … inkwell-10</text>
+    <text x="500" y="312" font-size="9" fill="#777" text-anchor="middle">35 mm fan</text>
+    <text x="500" y="340" font-size="11" fill="#555" text-anchor="middle">inkwell</text>
+  </g>
+
+  <!-- rotation mark traced from the reference icon -->
+  <g transform="translate(732,150)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 23.5 8.6 A 25 25 0 1 1 16.1 -19.2" fill="none" stroke="#333" stroke-width="4"/>
+    <polygon points="21.1,-14.9 8.2,-16.6 17.2,-27.3" fill="#333"/>
+    <text x="0" y="6" font-size="15" text-anchor="middle" font-weight="bold" fill="#333">180</text>
+    <circle cx="17" cy="-6" r="2.2" fill="none" stroke="#333" stroke-width="1.3"/>
+  </g>
+  <text x="732" y="196" font-size="9" text-anchor="middle" fill="#555">opponent's</text>
+  <text x="732" y="208" font-size="9" text-anchor="middle" fill="#555">mat is</text>
+  <text x="732" y="220" font-size="9" text-anchor="middle" fill="#555">mirrored</text>
+
+  <text x="70" y="518" font-size="13" fill="#555"># Eight play positions at most, for testing simplicity. Scenes are picked to fit.</text>
+  <text x="82" y="538" font-size="13" fill="#555">Limitation: boards at a table are messier and cards can overlap.</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="460" viewBox="0 0 820 460" font-family="Helvetica, Arial, sans-serif" fill="#111">
+  <rect width="820" height="460" fill="#fff"/>
+  <text x="20" y="20" font-size="12" font-weight="bold">InkZero AR</text>
+  <text x="20" y="34" font-size="11" fill="#555">Use case diagram</text>
+
+  <defs>
+    <g id="actor">
+      <circle cx="0" cy="-22" r="8" fill="none" stroke="#111" stroke-width="2"/>
+      <line x1="0" y1="-14" x2="0" y2="10" stroke="#111" stroke-width="2"/>
+      <line x1="-14" y1="-4" x2="14" y2="-4" stroke="#111" stroke-width="2"/>
+      <line x1="0" y1="10" x2="-10" y2="28" stroke="#111" stroke-width="2"/>
+      <line x1="0" y1="10" x2="10" y2="28" stroke="#111" stroke-width="2"/>
+    </g>
+  </defs>
+
+  <!-- system boundary -->
+  <rect x="230" y="60" width="380" height="340" fill="none" stroke="#111" stroke-width="2"/>
+  <text x="420" y="82" font-size="12" text-anchor="middle" font-weight="bold">InkZero AR</text>
+
+  <!-- use cases -->
+  <g font-size="12" text-anchor="middle">
+    <ellipse cx="420" cy="140" rx="90" ry="22" fill="#f6f6f6" stroke="#111" stroke-width="1.5"/><text x="420" y="144">Pin the mat</text>
+    <ellipse cx="420" cy="210" rx="90" ry="22" fill="#f6f6f6" stroke="#111" stroke-width="1.5"/><text x="420" y="214">View the overlay</text>
+    <ellipse cx="420" cy="320" rx="90" ry="22" fill="#f6f6f6" stroke="#111" stroke-width="1.5"/><text x="420" y="324">Step through the scene</text>
+  </g>
+  <g font-size="9" fill="#555" text-anchor="middle">
+    <text x="420" y="246">pips, the number and the counts, on the mat or in a panel</text>
+    <text x="420" y="356">next turn, previous turn</text>
+  </g>
+
+  <!-- player actor -->
+  <use href="#actor" x="90" y="170"/>
+  <text x="90" y="216" font-size="11" text-anchor="middle">Player</text>
+  <text x="90" y="229" font-size="10" text-anchor="middle" fill="#555">in the headset</text>
+  <line x1="106" y1="166" x2="330" y2="140" stroke="#111" stroke-width="1.2"/>
+  <line x1="106" y1="174" x2="330" y2="210" stroke="#111" stroke-width="1.2"/>
+
+  <!-- operator actor -->
+  <use href="#actor" x="90" y="330"/>
+  <text x="90" y="376" font-size="11" text-anchor="middle">Operator</text>
+  <text x="90" y="389" font-size="10" text-anchor="middle" fill="#555">at the laptop</text>
+  <line x1="106" y1="330" x2="330" y2="320" stroke="#111" stroke-width="1.2"/>
+
+  <!-- opponent actor, outside, no lines -->
+  <use href="#actor" x="720" y="230" opacity="0.5"/>
+  <text x="720" y="276" font-size="11" text-anchor="middle" fill="#555">Opponent</text>
+  <text x="720" y="289" font-size="10" text-anchor="middle" fill="#555">plays normally,</text>
+  <text x="720" y="301" font-size="10" text-anchor="middle" fill="#555">touches nothing</text>
+
+  <text x="20" y="424" font-size="12" fill="#555"># The scripted game loads itself at startup. The player pins the mat, then the operator steps through turns as they were played.</text>
+  <text x="20" y="442" font-size="12" fill="#555"># In live play, Recognition (the camera) would take the operator's role.</text>
+</svg>

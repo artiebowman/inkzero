@@ -193,7 +193,7 @@ The test that would answer the question, a study with the headset on versus off,
 
 This is a free learning tool for casual play. It is not for sanctioned events, meaning official tournaments. The tournament rules already forbid notes other than lore totals, and they allow electronic devices only when the device is in plain view of both players (sections 5.2 and 5.3), which a headset display is not. The poker and chess communities draw the same line on real-time help. The overlay is visible only to the player wearing the headset. In casual play the opponent knows the tool is there.
 
-No card art is reproduced; the overlay draws marks and numbers. Ravensburger, the company behind Lorcana, publishes guidelines for community use, and the project follows them and carries the statement they ask for.
+The panel rows carry a small card image, pulled from a public Lorcana card API and shown the way deck-building sites such as Dreamborn already show it. The project is free, makes no money, and is for learning. Ravensburger, the company behind Lorcana, publishes guidelines for community use, and the project follows them and carries the statement they ask for.
 
 Future work, in the order it would come:
 

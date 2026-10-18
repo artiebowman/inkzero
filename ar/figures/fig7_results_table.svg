@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="260" viewBox="0 0 720 260" font-family="Helvetica, Arial, sans-serif" fill="#111">
+  <rect width="720" height="260" fill="#fff"/>
+  <g font-size="13">
+    <!-- header -->
+    <rect x="40" y="30" width="640" height="34" fill="#eee" stroke="#111" stroke-width="1.5"/>
+    <text x="52" y="52" font-weight="bold">Check</text>
+    <text x="412" y="52" font-weight="bold">On the mat</text>
+    <text x="552" y="52" font-weight="bold">On the panel</text>
+    <!-- rows -->
+    <g stroke="#111" stroke-width="1.2" fill="none">
+      <rect x="40" y="64" width="640" height="36"/><rect x="40" y="100" width="640" height="36"/>
+      <rect x="40" y="136" width="640" height="36"/><rect x="40" y="172" width="640" height="36"/>
+      <line x1="400" y1="30" x2="400" y2="208"/><line x1="540" y1="30" x2="540" y2="208"/>
+    </g>
+    <text x="52" y="87">Correctness, turns matched out of turns checked</text>
+    <text x="52" y="123">Latency, ms from command to drawn frame</text>
+    <text x="52" y="159">Stability, mm of drift over a ten-minute session</text>
+    <text x="52" y="195">Readability, checklist items passed</text>
+  </g>
+  <text x="40" y="238" font-size="12" fill="#555"># Blank on purpose. To be filled in when the project is complete.</text>
+</svg>

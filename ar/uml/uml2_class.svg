@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="690" viewBox="0 0 1540 690" font-family="Helvetica, Arial, sans-serif" fill="#111">
+  <rect width="1540" height="690" fill="#fff"/>
+  <text x="20" y="20" font-size="12" font-weight="bold">InkZero AR</text>
+  <text x="20" y="34" font-size="11" fill="#555">Class diagram, demo build, grouped by package</text>
+  <defs>
+    <marker id="dep" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L9,5 L0,10" fill="none" stroke="#111" stroke-width="1.5"/>
+    </marker>
+    <marker id="agg" markerWidth="12" markerHeight="12" refX="11" refY="6" orient="auto">
+      <path d="M0,6 L5,1 L10,6 L5,11 Z" fill="#fff" stroke="#111" stroke-width="1.5"/>
+    </marker>
+  </defs>
+
+  <!-- ===== package borders, light: they say where a class lives ===== -->
+  <g font-size="10" font-weight="bold" fill="#777" stroke="#aaa" stroke-width="1.2">
+    <path d="M30,60 h150 v14 h-150 Z" fill="#f4f4f4"/>
+    <rect x="30" y="74" width="240" height="486" fill="none"/>
+    <text x="38" y="71" stroke="none">Perception / ScriptedGame</text>
+    <path d="M340,60 h70 v14 h-70 Z" fill="#f4f4f4"/>
+    <rect x="340" y="74" width="740" height="376" fill="none"/>
+    <text x="348" y="71" stroke="none">GameData</text>
+    <path d="M1160,60 h70 v14 h-70 Z" fill="#f4f4f4"/>
+    <rect x="1160" y="74" width="270" height="226" fill="none"/>
+    <text x="1168" y="71" stroke="none">Overlay</text>
+    <path d="M1160,330 h110 v14 h-110 Z" fill="#f4f4f4"/>
+    <rect x="1160" y="344" width="270" height="196" fill="none"/>
+    <text x="1168" y="341" stroke="none">Engine / Counting</text>
+  </g>
+
+  <!-- ===== Scene classes ===== -->
+  <g font-size="11">
+    <g transform="translate(50,110)">
+      <rect width="200" height="110" fill="#fff" stroke="#111" stroke-width="1.5"/>
+      <rect width="200" height="22" fill="#eee" stroke="#111" stroke-width="1.5"/>
+      <text x="100" y="15" text-anchor="middle" font-weight="bold">ScriptedGameLoader</text>
+      <text x="8" y="40">_scriptedGameFile: string</text>
+      <line x1="0" y1="48" x2="200" y2="48" stroke="#111"/>
+      <text x="8" y="66">LoadScriptedGame(gameState)</text>
+      <text x="8" y="84" fill="#555" font-size="9">fills it from the scripted-game file:</text>
+      <text x="8" y="98" fill="#555" font-size="9">decks, positions, turns. Runs once, at startup</text>
+    </g>
+    <g transform="translate(50,400)">
+      <rect width="200" height="112" fill="#fff" stroke="#111" stroke-width="1.5"/>
+      <rect width="200" height="22" fill="#eee" stroke="#111" stroke-width="1.5"/>
+      <text x="100" y="15" text-anchor="middle" font-weight="bold">TurnStepper</text>
+      <text x="8" y="40">_laptopPort: UsbPort</text>
+      <line x1="0" y1="48" x2="200" y2="48" stroke="#111"/>
+      <text x="8" y="66">OnLaptopCommand(command)</text>
+      <text x="8" y="84" fill="#555" font-size="9">then NextTurn or PreviousTurn,</text>
+      <text x="8" y="98" fill="#555" font-size="9">then BuildOverlayRows, then DrawOverlay</text>
+    </g>
+  </g>
+
+  <!-- ===== Model classes ===== -->
+  <g font-size="11">
+    <!-- GameState -->
+    <g transform="translate(360,100)">
+      <rect width="240" height="150" fill="#fff" stroke="#111" stroke-width="2.5"/>
+      <rect width="240" height="22" fill="#eee" stroke="#111" stroke-width="2.5"/>
+      <text x="120" y="15" text-anchor="middle" font-weight="bold">GameState</text>
+      <text x="8" y="40">turnNumber: int</text>
+      <text x="8" y="55">cardZones: CardZone[card][cardCopy]</text>
+      <text x="8" y="70">positionOnMat: MatPosition[card][cardCopy]</text>
+      <text x="8" y="85">handCount, loreCount: int  (from file)</text>
+      <text x="8" y="98">inkwellCount, deckCount, discardCount</text>
+      <line x1="0" y1="106" x2="240" y2="106" stroke="#111"/>
+      <text x="8" y="124">NextTurn()</text>
+      <text x="8" y="139">PreviousTurn()</text>
+    </g>
+    <!-- Card -->
+    <g transform="translate(645,100)">
+      <rect width="120" height="118" fill="#fff" stroke="#111" stroke-width="1.5"/>
+      <rect width="120" height="22" fill="#eee" stroke="#111" stroke-width="1.5"/>
+      <text x="60" y="15" text-anchor="middle" font-weight="bold">Card</text>
+      <text x="60" y="36" text-anchor="middle" font-size="9" fill="#555">one line of the deck list</text>
+      <text x="8" y="54">cardName: string</text>
+      <text x="8" y="69">cardCopiesInDeck: int</text>
+      <text x="8" y="84">cardType: CardType</text>
+      <text x="8" y="99">inkCost: int</text>
+      <line x1="0" y1="106" x2="120" y2="106" stroke="#111"/>
+    </g>
+    <!-- CardZone -->
+    <g transform="translate(790,100)">
+      <rect width="150" height="118" fill="#fff" stroke="#111" stroke-width="1.5"/>
+      <rect width="150" height="22" fill="#eee" stroke="#111" stroke-width="1.5"/>
+      <text x="75" y="15" text-anchor="middle" font-weight="bold">«enum» CardZone</text>
+      <text x="75" y="36" text-anchor="middle" font-size="9" fill="#555">zone a copy went to, as last seen</text>
+      <text x="8" y="54">Hand</text><text x="8" y="69">Deck</text><text x="8" y="84">Discard</text>
+      <text x="80" y="54">Inkwell</text><text x="80" y="69">InPlay</text><text x="80" y="84">Blank</text>
+    </g>
+    <!-- Turn -->
+    <g transform="translate(360,300)">
+      <rect width="120" height="118" fill="#fff" stroke="#111" stroke-width="1.5"/>
+      <rect width="120" height="22" fill="#eee" stroke="#111" stroke-width="1.5"/>
+      <text x="60" y="15" text-anchor="middle" font-weight="bold">Turn</text>
+      <text x="60" y="36" text-anchor="middle" font-size="9" fill="#555">one turn of play</text>
+      <text x="8" y="54">turnNumber: int</text>
+      <text x="8" y="69">zoneChanges:</text>
+      <text x="14" y="82">CardZoneChange[]</text>
+      <text x="8" y="97">handCount, loreCount</text>
+      <line x1="0" y1="106" x2="120" y2="106" stroke="#111"/>
+    </g>
+    <!-- CardZoneChange -->
+    <g transform="translate(495,300)">
+      <rect width="160" height="118" fill="#fff" stroke="#111" stroke-width="1.5"/>
+      <rect width="160" height="22" fill="#eee" stroke="#111" stroke-width="1.5"/>
+      <text x="80" y="15" text-anchor="middle" font-weight="bold">CardZoneChange</text>
+      <text x="80" y="36" text-anchor="middle" font-size="9" fill="#555">one copy, from one zone to another</text>
+      <text x="8" y="54">card: Card</text>
+      <text x="8" y="69">cardCopyNumber: int</text>
+      <text x="8" y="84">from: MatPosition | CardZone</text>
+      <text x="8" y="99">to: MatPosition | CardZone</text>
+      <line x1="0" y1="106" x2="160" y2="106" stroke="#111"/>
+    </g>
+    <!-- MatPosition -->
+    <g transform="translate(670,300)">
+      <rect width="180" height="118" fill="#fff" stroke="#111" stroke-width="1.5"/>
+      <rect width="180" height="22" fill="#eee" stroke="#111" stroke-width="1.5"/>
+      <text x="90" y="15" text-anchor="middle" font-weight="bold">MatPosition</text>
+      <text x="90" y="36" text-anchor="middle" font-size="9" fill="#555">a marked spot on the mat</text>
+      <text x="8" y="54">matPositionName: string</text>
+      <text x="8" y="69">matArea: MatArea</text>
+      <text x="8" y="84">matPositionMillimeters: Vector2</text>
+      <text x="8" y="99" fill="#555" font-size="9">e.g. play-3, inkwell-7, deck</text>
+      <line x1="0" y1="106" x2="180" y2="106" stroke="#111"/>
+    </g>
+    <!-- OverlayRow -->
+    <g transform="translate(865,300)">
+      <rect width="195" height="118" fill="#fff" stroke="#111" stroke-width="1.5"/>
+      <rect width="195" height="22" fill="#eee" stroke="#111" stroke-width="1.5"/>
+      <text x="97" y="15" text-anchor="middle" font-weight="bold">OverlayRow</text>
+      <text x="97" y="36" text-anchor="middle" font-size="9" fill="#555">what is drawn for one card</text>
+      <text x="8" y="54">card: Card</text>
+      <text x="8" y="69">pips: CardZone[]</text>
+      <text x="8" y="84">nextDrawOdds: float</text>
+      <text x="8" y="99">matPositionsInPlay: MatPosition[]</text>
+      <line x1="0" y1="106" x2="195" y2="106" stroke="#111"/>
+    </g>
+  </g>
+
+  <!-- ===== Display class ===== -->
+  <g font-size="11" transform="translate(1180,110)">
+    <rect width="230" height="120" fill="#fff" stroke="#111" stroke-width="1.5"/>
+    <rect width="230" height="22" fill="#eee" stroke="#111" stroke-width="1.5"/>
+    <text x="115" y="15" text-anchor="middle" font-weight="bold">OverlayDrawer</text>
+    <text x="8" y="40">placement: OverlayPlacement</text>
+    <text x="118" y="55" fill="#555" font-size="9">OnMat | OnPanel</text>
+    <text x="8" y="70">matCorners: Vector3[4]</text>
+    <line x1="0" y1="78" x2="230" y2="78" stroke="#111"/>
+    <text x="8" y="96">DrawOverlay(OverlayRow[], gameCounts)</text>
+    <text x="8" y="111" fill="#555" font-size="9">PinMat(corners): 4 pinches, Meta SDK</text>
+  </g>
+
+  <!-- ===== Engine class ===== -->
+  <g font-size="11" transform="translate(1175,370)">
+    <rect width="245" height="120" fill="#fff" stroke="#111" stroke-width="1.5"/>
+    <rect width="245" height="22" fill="#eee" stroke="#111" stroke-width="1.5"/>
+    <text x="122" y="15" text-anchor="middle" font-weight="bold">CountingEngine</text>
+    <text x="8" y="40">deckSize: int = 60</text>
+    <line x1="0" y1="48" x2="245" y2="48" stroke="#111"/>
+    <text x="8" y="66">BuildOverlayRows(gameState): OverlayRow[]</text>
+    <text x="8" y="84" fill="#555" font-size="9">odds = (Blank + Deck copies) / unseen cards</text>
+    <text x="8" y="98" fill="#555" font-size="9">InPlay copies go to positions, not pips</text>
+  </g>
+
+  <!-- ===== inside Model: what GameState holds (diamond on the owner) ===== -->
+  <g stroke="#111" stroke-width="1.2" fill="none">
+    <line x1="643" y1="140" x2="604" y2="140" marker-end="url(#agg)"/>
+    <line x1="400" y1="298" x2="400" y2="254" marker-end="url(#agg)"/>
+    <path d="M760,298 V276 H500 V254" marker-end="url(#agg)"/>
+  </g>
+  <g font-size="10" fill="#555">
+    <rect x="607" y="122" width="32" height="12" fill="#fff"/><text x="623" y="131" text-anchor="middle">cards</text>
+    <text x="406" y="280">turns</text>
+    <rect x="590" y="262" width="80" height="12" fill="#fff"/><text x="630" y="271" text-anchor="middle">positionOnMat</text>
+  </g>
+
+  <!-- ===== dependencies between packages: dashed = uses ===== -->
+  <g stroke="#111" stroke-width="1.3" stroke-dasharray="5 4" fill="none">
+    <line x1="252" y1="165" x2="356" y2="165" marker-end="url(#dep)"/>
+    <path d="M252,430 H325 V200 H356" marker-end="url(#dep)"/>
+    <path d="M150,514 V600 H1240 V494" marker-end="url(#dep)"/>
+    <path d="M1240,600 H1460 V170 H1414" marker-end="url(#dep)"/>
+    <line x1="1178" y1="430" x2="1084" y2="430" marker-end="url(#dep)"/>
+    <line x1="1178" y1="140" x2="1084" y2="140" marker-end="url(#dep)"/>
+    <line x1="1295" y1="368" x2="1295" y2="234" marker-end="url(#dep)"/>
+  </g>
+  <g font-size="10" fill="#555">
+    <text x="304" y="156" text-anchor="middle">fills</text>
+    <text x="319" y="306" text-anchor="end">NextTurn /</text>
+    <text x="319" y="318" text-anchor="end">PreviousTurn</text>
+    <text x="690" y="594" text-anchor="middle">TurnStepper drives the turn</text>
+    <text x="1248" y="560">BuildOverlayRows</text>
+    <text x="1466" y="400">DrawOverlay</text>
+    <text x="1130" y="421" text-anchor="middle">reads</text>
+    <text x="1130" y="130" text-anchor="middle">reads counts</text>
+    <text x="1303" y="310">OverlayRow[]</text>
+  </g>
+
+  <text x="20" y="648" font-size="12" fill="#555"># GameState is the only class that changes during play. Hand size and lore cannot be counted from the mat, so each Turn in the scripted-game file carries them.</text>
+  <text x="20" y="666" font-size="12" fill="#555"># InPlay is the sixth zone value. It gets no pip: the card is on the table, and its row is drawn under it.</text>
+</svg>

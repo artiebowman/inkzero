@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" font-family="Helvetica, Arial, sans-serif" fill="#111">
+  <rect width="960" height="520" fill="#fff"/>
+  <text x="20" y="20" font-size="12" font-weight="bold">InkZero AR</text>
+  <text x="20" y="34" font-size="11" fill="#555">Package diagram, demo build. Namespace InkZero.</text>
+  <defs>
+    <marker id="dep" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L9,5 L0,10" fill="none" stroke="#111" stroke-width="1.5"/></marker>
+  </defs>
+
+  <!-- Perception -->
+  <g transform="translate(30,70)">
+    <path d="M0,0 h90 v14 h-90 Z" fill="#eee" stroke="#111" stroke-width="1.5"/>
+    <rect y="14" width="240" height="330" fill="#fff" stroke="#111" stroke-width="1.5"/>
+    <text x="8" y="11" font-size="10" font-weight="bold">Perception</text>
+    <text x="120" y="36" font-size="9" text-anchor="middle" fill="#555">sense: what happens at the table → zone changes</text>
+    <!-- ScriptedGame -->
+    <g transform="translate(20,50)">
+      <path d="M0,0 h90 v14 h-90 Z" fill="#eee" stroke="#111" stroke-width="1.5"/>
+      <rect y="14" width="200" height="100" fill="#fff" stroke="#111" stroke-width="1.5"/>
+      <text x="8" y="11" font-size="10" font-weight="bold">ScriptedGame</text>
+      <text x="100" y="50" font-size="11" text-anchor="middle" font-weight="bold">ScriptedGameLoader</text>
+      <text x="100" y="70" font-size="11" text-anchor="middle" font-weight="bold">TurnStepper</text>
+      <text x="100" y="100" font-size="9" text-anchor="middle" fill="#555">now: the demo's stand-in for a camera</text>
+    </g>
+    <!-- Recognition, future -->
+    <g transform="translate(20,190)" opacity="0.45">
+      <path d="M0,0 h90 v14 h-90 Z" fill="#eee" stroke="#111" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <rect y="14" width="200" height="100" fill="#fff" stroke="#111" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <text x="8" y="11" font-size="10" font-weight="bold">Recognition</text>
+      <text x="100" y="60" font-size="11" text-anchor="middle">camera → zone changes</text>
+      <text x="100" y="100" font-size="9" text-anchor="middle">future: same job, no script</text>
+    </g>
+  </g>
+
+  <!-- GameData -->
+  <g transform="translate(350,70)">
+    <path d="M0,0 h90 v14 h-90 Z" fill="#eee" stroke="#111" stroke-width="2.5"/>
+    <rect y="14" width="240" height="150" fill="#fff" stroke="#111" stroke-width="2.5"/>
+    <text x="8" y="11" font-size="10" font-weight="bold">GameData</text>
+    <text x="120" y="48" font-size="11" text-anchor="middle" font-weight="bold">GameState</text>
+    <text x="120" y="70" font-size="11" text-anchor="middle" font-weight="bold">Card, Turn, CardZoneChange,</text>
+    <text x="120" y="86" font-size="11" text-anchor="middle" font-weight="bold">MatPosition, OverlayRow</text>
+    <text x="120" y="110" font-size="11" text-anchor="middle" font-weight="bold">«enum» CardZone, MatArea</text>
+    <text x="120" y="150" font-size="9" text-anchor="middle" fill="#555">the data; does not change when the others do</text>
+  </g>
+
+  <!-- Overlay -->
+  <g transform="translate(670,70)">
+    <path d="M0,0 h70 v14 h-70 Z" fill="#eee" stroke="#111" stroke-width="1.5"/>
+    <rect y="14" width="240" height="150" fill="#fff" stroke="#111" stroke-width="1.5"/>
+    <text x="8" y="11" font-size="10" font-weight="bold">Overlay</text>
+    <text x="120" y="60" font-size="11" text-anchor="middle" font-weight="bold">OverlayDrawer</text>
+    <text x="120" y="80" font-size="11" text-anchor="middle">on-mat and panel placements</text>
+    <text x="120" y="150" font-size="9" text-anchor="middle" fill="#555">act: draw it in passthrough. The contribution.</text>
+  </g>
+
+  <!-- Engine -->
+  <g transform="translate(350,260)">
+    <path d="M0,0 h70 v14 h-70 Z" fill="#eee" stroke="#111" stroke-width="1.5"/>
+    <rect y="14" width="560" height="140" fill="#fff" stroke="#111" stroke-width="1.5"/>
+    <text x="8" y="11" font-size="10" font-weight="bold">Engine</text>
+    <text x="280" y="34" font-size="9" text-anchor="middle" fill="#555">think: estimate what is hidden</text>
+    <g transform="translate(20,46)">
+      <path d="M0,0 h70 v14 h-70 Z" fill="#eee" stroke="#111" stroke-width="1.5"/>
+      <rect y="14" width="240" height="80" fill="#fff" stroke="#111" stroke-width="1.5"/>
+      <text x="8" y="11" font-size="10" font-weight="bold">Counting</text>
+      <text x="120" y="48" font-size="11" text-anchor="middle" font-weight="bold">CountingEngine</text>
+      <text x="120" y="78" font-size="9" text-anchor="middle" fill="#555">now: count what was seen, divide</text>
+    </g>
+    <g transform="translate(300,46)" opacity="0.45">
+      <path d="M0,0 h110 v14 h-110 Z" fill="#eee" stroke="#111" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <rect y="14" width="240" height="80" fill="#fff" stroke="#111" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <text x="8" y="11" font-size="10" font-weight="bold">MachineLearning</text>
+      <text x="120" y="48" font-size="11" text-anchor="middle">MachineLearningEngine</text>
+      <text x="120" y="78" font-size="9" text-anchor="middle">future: learned from data, method not yet chosen</text>
+    </g>
+  </g>
+
+  <!-- dependencies -->
+  <g stroke="#111" stroke-width="1.3" stroke-dasharray="5 4" fill="none">
+    <line x1="270" y1="150" x2="348" y2="150" marker-end="url(#dep)"/>
+    <line x1="470" y1="272" x2="470" y2="236" marker-end="url(#dep)"/>
+    <line x1="668" y1="150" x2="592" y2="150" marker-end="url(#dep)"/>
+    <line x1="760" y1="272" x2="760" y2="236" marker-end="url(#dep)"/>
+  </g>
+  <g font-size="9" fill="#555">
+    <text x="309" y="142" text-anchor="middle">writes</text>
+    <text x="478" y="258">reads</text>
+    <text x="630" y="142" text-anchor="middle">reads counts</text>
+    <text x="768" y="258">OverlayRow[] up to Overlay</text>
+  </g>
+
+  <text x="20" y="470" font-size="12" fill="#555"># Overlay never reads Perception, so it cannot tell a scripted game from a live one. Faded boxes are future swaps; each replaces its sibling.</text>
+  <text x="20" y="488" font-size="12" fill="#555"># One verb per stage: load → step → build → draw.</text>
+</svg>

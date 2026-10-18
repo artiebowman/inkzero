@@ -27,7 +27,7 @@ ar/
 
 This is a free learning tool for casual play. It is not for sanctioned events. Lorcana's tournament rules forbid notes other than lore totals, and allow electronic devices only when the device is in plain view of both players, which a headset display is not. The overlay is visible only to the player wearing the headset. In casual play the opponent knows the tool is there.
 
-No card art is reproduced in this repo or in the overlay; the overlay draws marks and numbers. Ravensburger, the company behind Lorcana, publishes guidelines for community use, and this project follows them.
+Card images and card data come from a public Lorcana card API and are shown the way deck-building sites such as Dreamborn already show them. This repo stores no card images. The project is free, makes no money, and is for learning. Ravensburger, the company behind Lorcana, publishes guidelines for community use, and this project follows them.
 
 InkZero is unofficial Fan Content permitted under Ravensburger's community guidelines. Not approved or endorsed by Disney or Ravensburger. Disney Lorcana and all related characters and elements are the property of Disney and Ravensburger.
 
