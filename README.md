@@ -8,9 +8,9 @@ Lorcana is a two-player trading card game with 60-card decks and hidden hands. A
 
 It is designed as a free helper for practice and casual play. It is not for tournaments. Card images and card data come from a public Lorcana card API, under Ravensburger's community guidelines.
 
-## The course project
+## Course project
 
-InkZero AR is my final project for HCC 552, AR/VR Design and Research, at Grand Valley State University, Fall 2026. The proposal is the place to start: [PDF](ar/docs/proposal/proposal.pdf), [Markdown](ar/docs/proposal/proposal.md).
+InkZero AR is a course project for HCC 552, AR/VR Design and Research, at Grand Valley State University, Fall 2026. The proposal is the place to start: [PDF](ar/docs/proposal/proposal.pdf), [Markdown](ar/docs/proposal/proposal.md).
 
 ## Layout
 
