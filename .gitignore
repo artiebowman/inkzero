@@ -42,3 +42,6 @@ __pycache__/
 *.unitypackage
 *.app
 crashlytics-build.properties
+
+# build output
+ar/build/*.html
