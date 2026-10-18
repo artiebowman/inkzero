@@ -32,3 +32,5 @@ Arthur Bowman, M.S. in Artificial Intelligence, Grand Valley State University.
 [MIT License](LICENSE) for the code and documents. Card data and images are not covered by it.
 
 InkZero AR is unofficial Fan Content permitted under Ravensburger's community guidelines. Not approved or endorsed by Disney or Ravensburger. Disney Lorcana and all related characters and elements are the property of Disney and Ravensburger.
+
+AI use: I used Claude, an AI assistant, as a tool to help draft and edit the documents in this repo. The design and the judgment behind it are mine.
