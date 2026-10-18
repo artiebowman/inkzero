@@ -15,5 +15,4 @@ One line per decision, newest at the bottom. The reason stays short. The proposa
 | 2026-10-18 | Scenes are copied from recorded tournament games, not authored. | I did not pick a board that flatters the overlay. |
 | 2026-10-18 | One repo, `inkzero`, with the AR part in `ar/`. | Claims the name. Recognition and engine get folders when they exist. |
 | 2026-10-18 | Card images come from a public Lorcana card API at runtime. None are stored in the repo. | Deck sites already show them this way. The project is free and for learning. |
-| 2026-10-18 | The proposal PDF is built on the Mac. | The CSS asks for Helvetica. Linux falls back to Liberation Sans. |
 | 2026-10-18 | MIT license for the code. Card data and images are not covered. | The usual choice for a free tool. |
